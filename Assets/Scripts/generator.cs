@@ -7,12 +7,13 @@ public class generator : MonoBehaviour {
 
 public GameObject boxes;
 
-
+public GameObject over;		
+public GameObject res;		
 	// Use this for initialization
 	void Start () {
 		InvokeRepeating("CreateObstacle", 1f, 1.5f);
-		
-
+		res.SetActive(false);
+		over.SetActive(false);
 	}
 	
 
